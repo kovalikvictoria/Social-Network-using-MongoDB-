@@ -60,3 +60,11 @@ D:\Education\Programs\Visual Studio 2019\Projects\SocialNetwork\WPF\obj\Debug\Us
 D:\Education\Programs\Visual Studio 2019\Projects\SocialNetwork\WPF\obj\Debug\UserControls\Windows\People.baml
 D:\Education\Programs\Visual Studio 2019\Projects\SocialNetwork\WPF\obj\Debug\UserControls\Windows\Registration.baml
 D:\Education\Programs\Visual Studio 2019\Projects\SocialNetwork\WPF\obj\Debug\UserControls\Windows\Comments.baml
+D:\Education\Programs\Visual Studio 2019\Projects\SocialNetwork\WPF\bin\Debug\Neo4j.Driver.dll
+D:\Education\Programs\Visual Studio 2019\Projects\SocialNetwork\WPF\bin\Debug\Neo4jClient.dll
+D:\Education\Programs\Visual Studio 2019\Projects\SocialNetwork\WPF\bin\Debug\BLL.dll.config
+D:\Education\Programs\Visual Studio 2019\Projects\SocialNetwork\WPF\bin\Debug\DAL.dll.config
+D:\Education\Programs\Visual Studio 2019\Projects\SocialNetwork\WPF\bin\Debug\Entity.dll.config
+D:\Education\Programs\Visual Studio 2019\Projects\SocialNetwork\WPF\bin\Debug\Neo4j.Driver.xml
+D:\Education\Programs\Visual Studio 2019\Projects\SocialNetwork\WPF\bin\Debug\Neo4jClient.pdb
+D:\Education\Programs\Visual Studio 2019\Projects\SocialNetwork\WPF\bin\Debug\Neo4jClient.xml

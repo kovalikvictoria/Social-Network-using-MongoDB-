@@ -1,5 +1,6 @@
 ﻿using MongoDB.Bson;
 using MongoDB.Bson.Serialization.Attributes;
+using Newtonsoft.Json;
 using System.Collections.Generic;
 
 namespace Entity
@@ -11,6 +12,7 @@ namespace Entity
         public ObjectId Id { get; set; }
 
         [BsonIgnoreIfNull]
+        [JsonProperty(PropertyName = "name")]
         public string Login { get; set; }
 
         [BsonIgnoreIfNull]

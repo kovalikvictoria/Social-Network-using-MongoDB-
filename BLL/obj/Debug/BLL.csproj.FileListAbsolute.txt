@@ -27,3 +27,11 @@ D:\Education\Programs\Visual Studio 2019\Projects\SocialNetwork\BLL\bin\Debug\Sy
 D:\Education\Programs\Visual Studio 2019\Projects\SocialNetwork\BLL\obj\Debug\BLL.csproj.CopyComplete
 D:\Education\Programs\Visual Studio 2019\Projects\SocialNetwork\BLL\obj\Debug\BLL.dll
 D:\Education\Programs\Visual Studio 2019\Projects\SocialNetwork\BLL\obj\Debug\BLL.pdb
+D:\Education\Programs\Visual Studio 2019\Projects\SocialNetwork\BLL\bin\Debug\BLL.dll.config
+D:\Education\Programs\Visual Studio 2019\Projects\SocialNetwork\BLL\bin\Debug\Neo4j.Driver.dll
+D:\Education\Programs\Visual Studio 2019\Projects\SocialNetwork\BLL\bin\Debug\Neo4jClient.dll
+D:\Education\Programs\Visual Studio 2019\Projects\SocialNetwork\BLL\bin\Debug\DAL.dll.config
+D:\Education\Programs\Visual Studio 2019\Projects\SocialNetwork\BLL\bin\Debug\Entity.dll.config
+D:\Education\Programs\Visual Studio 2019\Projects\SocialNetwork\BLL\bin\Debug\Neo4j.Driver.xml
+D:\Education\Programs\Visual Studio 2019\Projects\SocialNetwork\BLL\bin\Debug\Neo4jClient.pdb
+D:\Education\Programs\Visual Studio 2019\Projects\SocialNetwork\BLL\bin\Debug\Neo4jClient.xml

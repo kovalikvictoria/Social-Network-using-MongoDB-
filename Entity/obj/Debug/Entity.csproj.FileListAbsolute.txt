@@ -23,3 +23,9 @@ D:\Education\Programs\Visual Studio 2019\Projects\SocialNetwork\Entity\obj\Debug
 D:\Education\Programs\Visual Studio 2019\Projects\SocialNetwork\Entity\obj\Debug\Entity.csproj.CopyComplete
 D:\Education\Programs\Visual Studio 2019\Projects\SocialNetwork\Entity\obj\Debug\Entity.dll
 D:\Education\Programs\Visual Studio 2019\Projects\SocialNetwork\Entity\obj\Debug\Entity.pdb
+D:\Education\Programs\Visual Studio 2019\Projects\SocialNetwork\Entity\bin\Debug\Entity.dll.config
+D:\Education\Programs\Visual Studio 2019\Projects\SocialNetwork\Entity\bin\Debug\Neo4j.Driver.dll
+D:\Education\Programs\Visual Studio 2019\Projects\SocialNetwork\Entity\bin\Debug\Neo4jClient.dll
+D:\Education\Programs\Visual Studio 2019\Projects\SocialNetwork\Entity\bin\Debug\Neo4j.Driver.xml
+D:\Education\Programs\Visual Studio 2019\Projects\SocialNetwork\Entity\bin\Debug\Neo4jClient.pdb
+D:\Education\Programs\Visual Studio 2019\Projects\SocialNetwork\Entity\bin\Debug\Neo4jClient.xml

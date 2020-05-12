@@ -25,3 +25,10 @@ D:\Education\Programs\Visual Studio 2019\Projects\SocialNetwork\DAL\obj\Debug\DA
 D:\Education\Programs\Visual Studio 2019\Projects\SocialNetwork\DAL\obj\Debug\DAL.csproj.CopyComplete
 D:\Education\Programs\Visual Studio 2019\Projects\SocialNetwork\DAL\obj\Debug\DAL.dll
 D:\Education\Programs\Visual Studio 2019\Projects\SocialNetwork\DAL\obj\Debug\DAL.pdb
+D:\Education\Programs\Visual Studio 2019\Projects\SocialNetwork\DAL\bin\Debug\DAL.dll.config
+D:\Education\Programs\Visual Studio 2019\Projects\SocialNetwork\DAL\bin\Debug\Neo4j.Driver.dll
+D:\Education\Programs\Visual Studio 2019\Projects\SocialNetwork\DAL\bin\Debug\Neo4jClient.dll
+D:\Education\Programs\Visual Studio 2019\Projects\SocialNetwork\DAL\bin\Debug\Entity.dll.config
+D:\Education\Programs\Visual Studio 2019\Projects\SocialNetwork\DAL\bin\Debug\Neo4j.Driver.xml
+D:\Education\Programs\Visual Studio 2019\Projects\SocialNetwork\DAL\bin\Debug\Neo4jClient.pdb
+D:\Education\Programs\Visual Studio 2019\Projects\SocialNetwork\DAL\bin\Debug\Neo4jClient.xml
