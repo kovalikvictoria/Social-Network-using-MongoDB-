@@ -19,7 +19,7 @@
         <Button Width="245" x:Name="btnComments" Height="37" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="512,0,43,119" Content="View comments" Background="Transparent" FontStyle="Oblique" BorderThickness="0" Click="WhoCommented"/>
         <Button Width="98" BorderThickness="3" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="409,0,293,119" Foreground="WhiteSmoke" Background="IndianRed" BorderBrush="Transparent" Name="btnComment" Click="Comment" Height="37" Content="Comment" />
 
-        <Button Width="95" BorderBrush="Transparent" BorderThickness="3" Background="IndianRed" Foreground="WhiteSmoke" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="42,0,663,119"  Name="btnLike" Click="Like" Height="37"/>
+        <Button Width="95" BorderBrush="Transparent" BorderThickness="3" Background="IndianRed" Foreground="WhiteSmoke" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="42,0,663,119" Content="Like" Name="btnLike" Click="Like" Height="37"/>
 
         <Label Name="newpost" Content="NEW" BorderThickness="0" Background ="Green" Foreground="WhiteSmoke" FontFamily="Kristen ITC" FontSize="28" Margin="650 80 60 470"/>
         <Label Name="date" FontStyle="Oblique" Margin="512,373,68,201"/>

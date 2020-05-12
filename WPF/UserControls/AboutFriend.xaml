@@ -20,7 +20,7 @@
         <Button Width="159" x:Name="btnComments" Height="37" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="598,0,43,119" Content="View comments" Background="Transparent" FontStyle="Oblique" BorderThickness="0" Click="WhoCommented"/>
         <Button Width="98" BorderThickness="3" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="500,0,202,119" Foreground="WhiteSmoke" Background="IndianRed" BorderBrush="Transparent" Name="btnComment" Click="Comment" Height="37" Content="Comment" />
 
-        <Button Width="70" BorderBrush="Transparent" BorderThickness="3" Background="IndianRed" Foreground="WhiteSmoke" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="253,0,477,119"  Name="btnLike" Click="Like" Height="37"/>
+        <Button Width="70" Content="Like" BorderBrush="Transparent" BorderThickness="3" Background="IndianRed" Foreground="WhiteSmoke" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="253,0,477,119"  Name="btnLike" Click="Like" Height="37"/>
 
         <Label Name="date" FontStyle="Oblique" Margin="537,391,43,183"/>
         <Button Width="260" Height="51" HorizontalAlignment="Center" Background="DarkRed" BorderThickness="0" Foreground="WhiteSmoke" VerticalAlignment="Bottom"  Margin="239,0,301,51" Name="btnPrev" Content="Previous post"  Click="Prev"/>

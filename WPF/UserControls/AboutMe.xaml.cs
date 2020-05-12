@@ -55,7 +55,8 @@ namespace WPF.UserControls
                     _tempLike = false;
                     _postDAL.DismissLike(_userBLL.LoginRead(), _current_post.Id);
                 }
-                btnLike.Content = "Likes: " + _postBLL.GetNumOfLikes(_current_post.Id).ToString();
+                btnLikers.Content = "View likers: " + _postBLL.GetNumOfLikes(_current_post.Id).ToString();
+                btnComments.Content = "View comments: " + _postBLL.GetWhoCommented(_current_post.Id).Count;
             }
             else
             {
@@ -93,7 +94,8 @@ namespace WPF.UserControls
             {
                 WindowStartupLocation = WindowStartupLocation.CenterScreen
             };
-            main.Show();
+            main.ShowDialog();
+            this.btnComments.Content = "View comments: " + _postBLL.GetWhoCommented(_current_post.Id).Count;
         }
 
         private void Next(object sender, RoutedEventArgs e)
@@ -126,13 +128,15 @@ namespace WPF.UserControls
             {
                 WindowStartupLocation = WindowStartupLocation.CenterScreen
             };
-            window.Show();
+            window.ShowDialog();
+            Refresh();
         }
 
         private void EditPost(object sender, RoutedEventArgs e)
         {
             EditPost window = new EditPost(_current_post.Id);
-            window.Show();
+            window.ShowDialog();
+            Refresh();
         }
 
         private void DeletePost(object sender, RoutedEventArgs e)
@@ -151,6 +155,7 @@ namespace WPF.UserControls
                         {
                             MessageBox.Show("Sorry, we can't do it...");
                         }
+                        Refresh();
                         break;
                     }                    
                 case MessageBoxResult.No:
@@ -194,10 +199,10 @@ namespace WPF.UserControls
             main.ShowDialog();
         }
 
-        private void Refresh_Click(object sender, RoutedEventArgs e)
-        {
-            Refresh();
-        }
+        //private void Refresh_Click(object sender, RoutedEventArgs e)
+        //{
+        //    Refresh();
+        //}
 
         public void Refresh()
         {
@@ -230,7 +235,8 @@ namespace WPF.UserControls
                     btnLike.BorderBrush = Brushes.Transparent;
                     _tempLike = false;
                 }
-                btnLike.Content = "Likes: " + _postBLL.GetNumOfLikes(_current_post.Id).ToString();
+                btnLikers.Content = "View likers: " + _postBLL.GetNumOfLikes(_current_post.Id).ToString();
+                btnComments.Content = "View comments: " + _postBLL.GetWhoCommented(_current_post.Id).Count;
             }
             else
             {

@@ -20,14 +20,13 @@
         <Button Width="159" x:Name="btnComments" Height="37" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="598,0,43,119" Content="View comments" Background="Transparent" FontStyle="Oblique" BorderThickness="0" Click="WhoCommented"/>
         <Button Width="98" BorderThickness="3" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="500,0,202,119" Foreground="WhiteSmoke" Background="IndianRed" BorderBrush="Transparent" Name="btnComment" Click="Comment" Height="37" Content="Comment" />
 
-        <Button Width="70" BorderBrush="Transparent" BorderThickness="3" Background="IndianRed" Foreground="WhiteSmoke" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="253,0,477,119"  Name="btnLike" Click="Like" Height="37"/>
+        <Button Content="Like" Width="70" BorderBrush="Transparent" BorderThickness="3" Background="IndianRed" Foreground="WhiteSmoke" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="253,0,477,119"  Name="btnLike" Click="Like" Height="37"/>
 
         <Label Name="date" FontStyle="Oblique" Margin="537,391,43,183"/>
         <Button Width="260" Height="51" HorizontalAlignment="Center" Background="DarkRed" BorderThickness="0" Foreground="WhiteSmoke" VerticalAlignment="Bottom"  Margin="239,0,301,51" Name="btnPrev" Content="Previous post"  Click="Prev"/>
         <Button Width="253" Height="51" HorizontalAlignment="Center" Background="DarkRed" BorderThickness="0" Foreground="WhiteSmoke" VerticalAlignment="Bottom"  Margin="504,0,43,51" Name="btnNext" Content="Next post"  Click="Next"/>
         <Button Width="144" Height="43" HorizontalAlignment="Center" VerticalAlignment="Bottom"  Margin="54,0,602,231" Content="Add new Post"  Click="AddPost"/>
         <Button x:Name="btnEdit" Width="144" Height="43" HorizontalAlignment="Center" VerticalAlignment="Bottom"  Margin="54,0,602,183" Content="Edit Post"  Click="EditPost"/>
-        <Button Width="72" Height="46" HorizontalAlignment="Center" VerticalAlignment="Bottom" FontStyle="Oblique" Background="Transparent" BorderThickness="0" Margin="685,0,43,507" Content="Refresh"  Click="Refresh_Click"/>
         <Button Width="180" BorderThickness="0" Background="IndianRed" Foreground="WhiteSmoke" Height="30" HorizontalAlignment="Center" VerticalAlignment="Bottom"  Margin="31,0,589,312" Content="Following"  Click="Following"/>
         <Button Width="180" BorderThickness="0" Background="IndianRed" Foreground="WhiteSmoke" Height="30" HorizontalAlignment="Center" VerticalAlignment="Bottom"  Margin="31,0,589,347" Content="Followers"  Click="Followers"/>
         <Button Width="144" Height="43" HorizontalAlignment="Center" VerticalAlignment="Bottom"  Margin="54,0,602,132" Content="Delete Post" Name="btnDelete" Click="DeletePost"/>

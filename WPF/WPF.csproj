@@ -40,6 +40,12 @@
     <Reference Include="MongoDB.Bson, Version=2.10.3.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\MongoDB.Bson.2.10.3\lib\net452\MongoDB.Bson.dll</HintPath>
     </Reference>
+    <Reference Include="Neo4j.Driver, Version=1.7.91.0, Culture=neutral, PublicKeyToken=c08b0bc1c355082b, processorArchitecture=MSIL">
+      <HintPath>..\packages\Neo4j.Driver.Signed.1.7.0\lib\net452\Neo4j.Driver.dll</HintPath>
+    </Reference>
+    <Reference Include="Neo4jClient, Version=3.1.0.6, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Neo4jClient.3.1.0.6\lib\net46\Neo4jClient.dll</HintPath>
+    </Reference>
     <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
@@ -69,10 +75,10 @@
     <Compile Include="UserControls\AboutMe.xaml.cs">
       <DependentUpon>AboutMe.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Windows\AddComment.xaml.cs">
+    <Compile Include="UserControls\Windows\AddComment.xaml.cs">
       <DependentUpon>AddComment.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Windows\AddPost.xaml.cs">
+    <Compile Include="UserControls\Windows\AddPost.xaml.cs">
       <DependentUpon>AddPost.xaml</DependentUpon>
     </Compile>
     <Compile Include="UserControls\Settings.xaml.cs">
@@ -81,16 +87,16 @@
     <Compile Include="UserControls\TimeLine.xaml.cs">
       <DependentUpon>TimeLine.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Windows\EditPost.xaml.cs">
+    <Compile Include="UserControls\Windows\EditPost.xaml.cs">
       <DependentUpon>EditPost.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Windows\People.xaml.cs">
+    <Compile Include="UserControls\Windows\People.xaml.cs">
       <DependentUpon>People.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Windows\Registration.xaml.cs">
+    <Compile Include="UserControls\Windows\Registration.xaml.cs">
       <DependentUpon>Registration.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Windows\Comments.xaml.cs">
+    <Compile Include="UserControls\Windows\Comments.xaml.cs">
       <DependentUpon>Comments.xaml</DependentUpon>
     </Compile>
     <Page Include="UserControls\AboutFriend.xaml">
@@ -101,11 +107,11 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Windows\AddComment.xaml">
+    <Page Include="UserControls\Windows\AddComment.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Windows\AddPost.xaml">
+    <Page Include="UserControls\Windows\AddPost.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -117,7 +123,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Windows\EditPost.xaml">
+    <Page Include="UserControls\Windows\EditPost.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -125,7 +131,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Windows\MainWindow.xaml">
+    <Page Include="UserControls\Windows\MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -136,19 +142,19 @@
     <Compile Include="Login.xaml.cs">
       <DependentUpon>Login.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Windows\MainWindow.xaml.cs">
+    <Compile Include="UserControls\Windows\MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="Windows\People.xaml">
+    <Page Include="UserControls\Windows\People.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Windows\Registration.xaml">
+    <Page Include="UserControls\Windows\Registration.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Windows\Comments.xaml">
+    <Page Include="UserControls\Windows\Comments.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
