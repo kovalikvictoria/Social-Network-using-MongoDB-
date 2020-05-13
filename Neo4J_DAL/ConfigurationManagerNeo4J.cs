@@ -5,10 +5,6 @@ namespace Neo4J
 {
     public class ConfigurationManagerNeo4J
     {
-        private ConfigurationManagerNeo4J()
-        {
-        }
-
         public static GraphClient GetDefaultClient()
         {
             var connectionString = GetDefaultConnectionString();

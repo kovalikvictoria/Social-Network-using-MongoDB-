@@ -12,14 +12,17 @@ namespace WPF.Windows
         {
             InitializeComponent();
         }
+
         private void MoveCursorMenu(int index)
         {
         
         }
+
         private void Grid_MouseDown(object sender, MouseButtonEventArgs e)
         {
             DragMove();
         }
+
         private void ListViewMenu_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             int index = ListViewMenu.SelectedIndex;

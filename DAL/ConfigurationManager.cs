@@ -4,10 +4,6 @@ namespace DAL
 {
     public class ConfigurationManager
     {
-        private ConfigurationManager()
-        {
-        }
-
         public static IMongoDatabase GetDefaultDatabase()
         {
             var connectionString = GetDefaultConnectionString();

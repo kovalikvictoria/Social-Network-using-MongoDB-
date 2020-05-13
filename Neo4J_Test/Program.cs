@@ -1,12 +1,6 @@
 ﻿using Entity;
 using Neo4J;
-using Neo4jClient;
-using Newtonsoft.Json;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Neo4J_Test
 {
@@ -14,11 +8,11 @@ namespace Neo4J_Test
     {
         static void Main(string[] args)
         {
-            var client = ConfigurationManagerNeo4J.GetDefaultClient(); //need replace to DAL
+            var client = ConfigurationManagerNeo4J.GetDefaultClient();
             PersonDAL personDAL = new PersonDAL();
 
             User user1 = new User();
-            user1.Login = "ostap";
+            user1.Login = "ivasyk";
             User user2 = new User();
             user2.Login = "vika";
             //personDAL.CreatePerson(user);
@@ -27,8 +21,9 @@ namespace Neo4J_Test
 
             //personDAL.DeletePerson(user);
 
-            personDAL.CreateRelationship(user2, user1);
-            //personDAL.DeleteRelationship(user2, user1);
+            //personDAL.CreateRelationships(user2, user1);
+            //personDAL.DeleteRelationships(user2, user1);
+            //var people = personDAL.GetFollowingRelations(user2);
 
             var people = client.Cypher.Match("(p:Person)").Return(p => p.As<User>()).Results;
             

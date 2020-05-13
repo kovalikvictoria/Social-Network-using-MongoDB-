@@ -51,6 +51,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ConfigurationManagerNeo4J.cs" />
+    <Compile Include="PersonBLL.cs" />
     <Compile Include="PersonDAL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -58,6 +59,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\DAL\DAL.csproj">
+      <Project>{1001E938-9B5E-4B51-9EC5-A7CB18B3015C}</Project>
+      <Name>DAL</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Entity\Entity.csproj">
       <Project>{a5e5e96b-99d5-4b44-b2d9-e6c6aa1e87ae}</Project>
       <Name>Entity</Name>

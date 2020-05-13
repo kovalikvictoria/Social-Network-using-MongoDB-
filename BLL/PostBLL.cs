@@ -27,7 +27,6 @@ namespace BLL
             string n = userBLL.LoginRead();
             ObjectId id = userDAL.GetUserId(n);
             post.OwnerId = id;
-            //post.OwnerId = userDAL.GetUserId(userBLL.LoginRead());
             post.DateTime = DateTime.Now.ToString();
             postDAL.InsertPost(post);
         }
@@ -36,7 +35,7 @@ namespace BLL
         {
             try
             {
-                postDAL.UpdateByText(postId, newText);
+                postDAL.UpdatePost(postId, newText);
             }
             catch { }
         }
@@ -178,16 +177,6 @@ namespace BLL
                 return postDAL.SelectAllPosts(postIds).OrderByDescending(p => p.DateTime).ToList();
             }
             return new List<Post>();
-            //List<Post> posts = new List<Post>();
-            //try
-            //{
-            //    posts = postDAL.SelectAllPosts();
-            //    return posts.OrderByDescending(p => p.DateTime).ToList();
-            //}
-            //catch
-            //{
-            //    return posts;
-            //}
         }
 
         public Post GetPost(ObjectId postId)

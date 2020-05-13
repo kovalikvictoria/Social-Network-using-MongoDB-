@@ -1,32 +1,19 @@
 ﻿using BLL;
-using DAL;
 using Entity;
-using System;
+using Neo4J;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
 using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 using WPF.Windows;
 
 namespace WPF.UserControls
 {
-    /// <summary>
-    /// Interaction logic for AboutFriend.xaml
-    /// </summary>
     public partial class AboutFriend : UserControl
     {
         string _friendLogin;
         UserBLL _userBLL;
-        UserDAL _userDAL;
+        PersonBLL _personBLL;
         PostBLL _postBLL;
         User _user;
         Post _current_post;
@@ -41,12 +28,12 @@ namespace WPF.UserControls
 
             _friendLogin = friendLogin;
             _userBLL = new UserBLL();
-            _userDAL = new UserDAL();
+            _personBLL = new PersonBLL();
             _postBLL = new PostBLL();
 
             _user = _userBLL.GetUser(_friendLogin);
             info.Content = _user.FirstName + "  " + _user.LastName + "\nLogin:   " + _user.Login + "\nActive:\n      " + _user.LastLogin;
-            if (_userBLL.IsUserFollowing(_userBLL.LoginRead(), _friendLogin))
+            if (_personBLL.IsUserFollowing(_userBLL.LoginRead(), _friendLogin))
             {
                 btnFollow.BorderBrush = Brushes.Green;
             }
@@ -61,15 +48,14 @@ namespace WPF.UserControls
         }
         private void Follow_Click(object sender, RoutedEventArgs e)
         {
-            if (!_userBLL.IsUserFollowing(_userBLL.LoginRead(), _friendLogin))
+            if (!_personBLL.IsUserFollowing(_userBLL.LoginRead(), _friendLogin))
             {
-                _userDAL.AddFollowing(_userBLL.LoginRead(), _friendLogin);
-                _userDAL.AddFollowers(_friendLogin, _userBLL.LoginRead());
+                _personBLL.Follow(_userBLL.LoginRead(), _friendLogin);
                 btnFollow.BorderBrush = Brushes.Green;
             }
             else
             {
-                _userDAL.Unfollow(_userBLL.LoginRead(), _friendLogin);
+                _personBLL.Unfollow(_userBLL.LoginRead(), _friendLogin);
                 btnFollow.BorderBrush = Brushes.Transparent;
             }
         }
@@ -177,7 +163,7 @@ namespace WPF.UserControls
 
         private void Following(object sender, RoutedEventArgs e)
         {
-            People main = new People(_userBLL.GetFollowing(_friendLogin))
+            People main = new People(_personBLL.GetFollowing(_friendLogin))
             {
                 WindowStartupLocation = WindowStartupLocation.CenterScreen
             };
@@ -186,7 +172,7 @@ namespace WPF.UserControls
 
         private void Followers(object sender, RoutedEventArgs e)
         {
-            People main = new People(_userBLL.GetFollowers(_friendLogin))
+            People main = new People(_personBLL.GetFollowers(_friendLogin))
             {
                 WindowStartupLocation = WindowStartupLocation.CenterScreen
             };

@@ -114,27 +114,6 @@ namespace BLL
             return p.Login;
         }
         
-        public bool IsUserFollowing(string login, string userLogin)
-        {
-            User user = new User();
-            user = userDAL.SelectByLogin(login);
-            if (user != null && user.Following != null)
-            {
-                foreach (var u in user.Following)
-                {
-                    if (u == userLogin)
-                    {
-                        return true;
-                    }
-                }
-            }
-            else
-            {
-                return false;
-            }
-            return false;
-        }
-        
         public bool IsUserExist(string login)
         {
             User user = new User();
@@ -226,34 +205,6 @@ namespace BLL
             catch
             {
                 return new User();
-            }
-        }
-
-        public List<string> GetFollowers(string login)
-        {
-            List<string> followers = new List<string>();
-            try
-            {
-                followers = userDAL.GetFollowers(login);
-                return followers;
-            }
-            catch
-            {
-                return followers;
-            }
-        }
-
-        public List<string> GetFollowing(string login)
-        {
-            List<string> following = new List<string>();
-            try
-            {
-                following = userDAL.GetFollowing(login);
-                return following;
-            }
-            catch
-            {
-                return following;
             }
         }
     }

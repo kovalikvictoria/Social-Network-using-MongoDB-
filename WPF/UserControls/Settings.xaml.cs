@@ -1,27 +1,20 @@
 ﻿using BLL;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using Neo4J;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
 
 namespace WPF.UserControls
 {
     public partial class Settings : UserControl
     {
         UserBLL _userBLL;
+        PersonBLL _personBLL;
+
         public Settings()
         {
             InitializeComponent();
             _userBLL = new UserBLL();
+            _personBLL = new PersonBLL();
             var user = _userBLL.GetUser();
             firstName.Text = user.FirstName;
             lastName.Text = user.LastName;
@@ -36,7 +29,8 @@ namespace WPF.UserControls
                 {
                     if (_userBLL.UpdateByField(_userBLL.LoginRead(), "LastName", lastName.Text)
                         & _userBLL.UpdateByField(_userBLL.LoginRead(), "FirstName", firstName.Text)
-                        & _userBLL.UpdateByField(_userBLL.LoginRead(), "Login", login.Text))
+                        & _userBLL.UpdateByField(_userBLL.LoginRead(), "Login", login.Text)
+                        & _personBLL.UpdatePerson(_userBLL.LoginRead(), login.Text))
                     {
                         _userBLL.LoginWrite(login.Text);
                         MessageBox.Show("Successfully updated!");

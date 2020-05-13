@@ -1,27 +1,20 @@
 ﻿using BLL;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using Neo4J;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
 using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
 
 namespace WPF.Windows
 {
     public partial class Registration : Window
     {
         UserBLL _userBLL;
+        PersonBLL _personBLL;
+
         public Registration()
         {
             InitializeComponent();
             _userBLL = new UserBLL();
+            _personBLL = new PersonBLL();
         }
 
         private void Button_Login(object sender, RoutedEventArgs e)
@@ -35,6 +28,7 @@ namespace WPF.Windows
                         try
                         {
                             _userBLL.AddUser(firstName.Text, lastName.Text, login.Text, pwd.Password.ToString());
+                            _personBLL.AddPerson(login.Text);
                             _userBLL.LoginWrite(login.Text);
                             MainWindow main = new MainWindow()
                             {

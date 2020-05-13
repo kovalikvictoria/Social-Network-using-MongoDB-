@@ -75,10 +75,10 @@
     <Compile Include="UserControls\AboutMe.xaml.cs">
       <DependentUpon>AboutMe.xaml</DependentUpon>
     </Compile>
-    <Compile Include="UserControls\Windows\AddComment.xaml.cs">
+    <Compile Include="Windows\AddComment.xaml.cs">
       <DependentUpon>AddComment.xaml</DependentUpon>
     </Compile>
-    <Compile Include="UserControls\Windows\AddPost.xaml.cs">
+    <Compile Include="Windows\AddPost.xaml.cs">
       <DependentUpon>AddPost.xaml</DependentUpon>
     </Compile>
     <Compile Include="UserControls\Settings.xaml.cs">
@@ -87,16 +87,16 @@
     <Compile Include="UserControls\TimeLine.xaml.cs">
       <DependentUpon>TimeLine.xaml</DependentUpon>
     </Compile>
-    <Compile Include="UserControls\Windows\EditPost.xaml.cs">
+    <Compile Include="Windows\EditPost.xaml.cs">
       <DependentUpon>EditPost.xaml</DependentUpon>
     </Compile>
-    <Compile Include="UserControls\Windows\People.xaml.cs">
+    <Compile Include="Windows\People.xaml.cs">
       <DependentUpon>People.xaml</DependentUpon>
     </Compile>
-    <Compile Include="UserControls\Windows\Registration.xaml.cs">
+    <Compile Include="Windows\Registration.xaml.cs">
       <DependentUpon>Registration.xaml</DependentUpon>
     </Compile>
-    <Compile Include="UserControls\Windows\Comments.xaml.cs">
+    <Compile Include="Windows\Comments.xaml.cs">
       <DependentUpon>Comments.xaml</DependentUpon>
     </Compile>
     <Page Include="UserControls\AboutFriend.xaml">
@@ -107,11 +107,11 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="UserControls\Windows\AddComment.xaml">
+    <Page Include="Windows\AddComment.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="UserControls\Windows\AddPost.xaml">
+    <Page Include="Windows\AddPost.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -123,7 +123,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="UserControls\Windows\EditPost.xaml">
+    <Page Include="Windows\EditPost.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -131,7 +131,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="UserControls\Windows\MainWindow.xaml">
+    <Page Include="Windows\MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -142,19 +142,19 @@
     <Compile Include="Login.xaml.cs">
       <DependentUpon>Login.xaml</DependentUpon>
     </Compile>
-    <Compile Include="UserControls\Windows\MainWindow.xaml.cs">
+    <Compile Include="Windows\MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="UserControls\Windows\People.xaml">
+    <Page Include="Windows\People.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="UserControls\Windows\Registration.xaml">
+    <Page Include="Windows\Registration.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="UserControls\Windows\Comments.xaml">
+    <Page Include="Windows\Comments.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -198,6 +198,10 @@
     <ProjectReference Include="..\Entity\Entity.csproj">
       <Project>{A5E5E96B-99D5-4B44-B2D9-E6C6AA1E87AE}</Project>
       <Name>Entity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Neo4J_DAL\Neo4J.csproj">
+      <Project>{6E7A9652-B92B-4EF6-A715-032DA4869F42}</Project>
+      <Name>Neo4J</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup />

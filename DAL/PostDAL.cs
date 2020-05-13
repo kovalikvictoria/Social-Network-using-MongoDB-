@@ -25,13 +25,9 @@ namespace DAL
         // Insert
         public void InsertPost(Post post) =>
           collection.InsertOne(post);
-        public void InsertPosts(IEnumerable<Post> posts) =>
-            collection.InsertMany(posts);
 
         // Update
-        public void UpdatePost(ObjectId postId, Post post) =>
-            collection.ReplaceOne(p => p.Id == postId, post);
-        public void UpdateByText(ObjectId postId, string newText)
+        public void UpdatePost(ObjectId postId, string newText)
         {
             var filter = Builders<Post>.Filter.Eq("_id", postId);
             var update = Builders<Post>.Update.Set("Text", newText);
@@ -45,12 +41,13 @@ namespace DAL
             var posts = collection.Find(filter).ToList();
             return posts;
         }            
-            
-            //=> collection.Find(new BsonDocument()).ToList();
+        
         public List<Post> SelectAllPosts(ObjectId OwnerId) =>
             collection.Find(p => p.OwnerId == OwnerId).ToList();
+
         public Post SelectById(ObjectId id) =>
           collection.Find(p => p.Id == id).FirstOrDefault();
+
         public List<Post> SelectNewPosts(string TimeOfLastUserLogin, List<ObjectId> following)
         {
             var filter = Builders<Post>.Filter.Gte("DateTime", TimeOfLastUserLogin);
@@ -59,10 +56,7 @@ namespace DAL
             return posts;
         }
 
-
         // Delete
-        public void DeletePost(Post post) =>
-             collection.DeleteOne(p => p.Id == post.Id);
         public void DeleteById(ObjectId postId) =>
            collection.DeleteOne(p => p.Id == postId);
 
@@ -76,6 +70,7 @@ namespace DAL
             update = Builders<Post>.Update.Push("WhoLiked", likerLogin);
             collection.UpdateOne(filter, update);
         }
+
         public void DismissLike(string likerLogin, ObjectId postId)
         {
             var filter = Builders<Post>.Filter.Eq("_id", postId);
@@ -85,18 +80,21 @@ namespace DAL
             update = Builders<Post>.Update.Pull("WhoLiked", likerLogin);
             collection.UpdateOne(filter, update);
         }
+
         public void AddComment(Comment comment, ObjectId postId)
         {
             var filter = Builders<Post>.Filter.Eq("_id", postId);
             var update = Builders<Post>.Update.Push("Comments", comment);
             collection.UpdateOne(filter, update);
         }
+
         public void DeleteComment(Comment comment, ObjectId postId)
         {
             var filter = Builders<Post>.Filter.Eq("_id", postId);
             var update = Builders<Post>.Update.Pull("Comments", comment);
             collection.UpdateOne(filter, update);
         }
+
         public List<string> GetWhoLiked(ObjectId postId)
         {
             var filter = Builders<Post>.Filter.Eq("_id", postId);
@@ -104,12 +102,14 @@ namespace DAL
             return people;
 
         }
+
         public int GetNumOfLikes(ObjectId postId)
         {
             var filter = Builders<Post>.Filter.Eq("_id", postId);
             var likes = collection.Find(filter).Project(x => x.Likes).First();
             return likes;
         }
+
         public List<Comment> GetComments(ObjectId postId)
         {
             var filter = Builders<Post>.Filter.Eq("_id", postId);

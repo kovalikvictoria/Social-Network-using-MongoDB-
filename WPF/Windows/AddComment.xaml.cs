@@ -26,10 +26,12 @@ namespace WPF.Windows
         {
             DragMove();
         }
+
         private void Text_TextChanged(object sender, TextChangedEventArgs e)
         {
 
         }
+
         private void Window_MouseMove(object sender, MouseEventArgs e)
         {
             if (e.LeftButton == MouseButtonState.Pressed)
@@ -43,6 +45,7 @@ namespace WPF.Windows
             _postBLL.AddComment(Text.Text, _postId);
             this.Close();
         }
+
         private void Cancel_Click(object sender, RoutedEventArgs e)
         {
             this.Close();

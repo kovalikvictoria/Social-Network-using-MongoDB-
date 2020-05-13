@@ -1,20 +1,11 @@
 ﻿using BLL;
 using DAL;
 using Entity;
-using System;
+using Neo4J;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
 using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 using WPF.Windows;
 
 namespace WPF.UserControls
@@ -24,7 +15,9 @@ namespace WPF.UserControls
         PostDAL _postDAL;
         PostBLL _postBLL;
         UserBLL _userBLL;
+        PersonBLL _personBLL;
         User _user;
+        List<string> _followings;
         List<Post> _posts;
         List<Post> _new_posts;
         bool _is_any_posts = false;
@@ -39,6 +32,7 @@ namespace WPF.UserControls
             _postDAL = new PostDAL();
             _postBLL = new PostBLL();
             _userBLL = new UserBLL();
+            _personBLL = new PersonBLL();
 
             _user = _userBLL.GetUser(_userBLL.LoginRead());
                         
@@ -102,7 +96,7 @@ namespace WPF.UserControls
             {
                 WindowStartupLocation = WindowStartupLocation.CenterScreen
             };
-            main.Show();
+            main.ShowDialog();
             btnComments.Content = "View comments: " + _postBLL.GetWhoCommented(_current_post.Id).Count;
         }
 
@@ -128,6 +122,7 @@ namespace WPF.UserControls
                 }
             }
         }
+
         private void WhoLiked(object sender, RoutedEventArgs e)
         {
             People main = new People(_postBLL.GetWhoLiked(_current_post.Id))
@@ -148,8 +143,9 @@ namespace WPF.UserControls
 
         public void Refresh()
         {
-            _posts = _postBLL.GetAllPosts(_user.Following);
-            _new_posts = _postBLL.GetNewPosts(_user.LastLogin, _user.Following);
+            _followings = _personBLL.GetFollowing(_user.Login);
+            _posts = _postBLL.GetAllPosts(_followings);
+            _new_posts = _postBLL.GetNewPosts(_user.LastLogin, _followings);
             if (_posts != null && _posts.Count > 0)
             {
                 btnLike.IsEnabled = true;

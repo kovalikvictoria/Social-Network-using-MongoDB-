@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 D:\Education\Programs\Visual Studio 2019\Projects\SocialNetwork\WPF\App.xaml
-12-1040972859
+12-1148680033
 
-16617410962
-21-998016800
-UserControls\AboutFriend.xaml;UserControls\AboutMe.xaml;UserControls\Windows\AddComment.xaml;UserControls\Windows\AddPost.xaml;UserControls\Settings.xaml;UserControls\TimeLine.xaml;UserControls\Windows\EditPost.xaml;Login.xaml;UserControls\Windows\MainWindow.xaml;UserControls\Windows\People.xaml;UserControls\Windows\Registration.xaml;UserControls\Windows\Comments.xaml;
+16999994344
+22-1431710230
+UserControls\AboutFriend.xaml;UserControls\AboutMe.xaml;Windows\AddComment.xaml;Windows\AddPost.xaml;UserControls\Settings.xaml;UserControls\TimeLine.xaml;Windows\EditPost.xaml;Login.xaml;Windows\MainWindow.xaml;Windows\People.xaml;Windows\Registration.xaml;Windows\Comments.xaml;
 
 False
 

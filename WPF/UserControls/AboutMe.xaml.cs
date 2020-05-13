@@ -1,6 +1,7 @@
 ﻿using BLL;
 using DAL;
 using Entity;
+using Neo4J;
 using System.Collections.Generic;
 using System.Windows;
 using System.Windows.Controls;
@@ -12,6 +13,7 @@ namespace WPF.UserControls
     public partial class AboutMe : UserControl
     {
         UserBLL _userBLL;
+        PersonBLL _personBLL;
         PostDAL _postDAL;
         PostBLL _postBLL;
         User _user;
@@ -26,6 +28,7 @@ namespace WPF.UserControls
             InitializeComponent();
 
             _userBLL = new UserBLL();
+            _personBLL = new PersonBLL();
             _postDAL = new PostDAL();
             _postBLL = new PostBLL();
 
@@ -183,7 +186,7 @@ namespace WPF.UserControls
 
         private void Following(object sender, RoutedEventArgs e)
         {
-            People main = new People(_userBLL.GetFollowing(_userBLL.LoginRead()))
+            People main = new People(_personBLL.GetFollowing(_userBLL.LoginRead()))
             {
                 WindowStartupLocation = WindowStartupLocation.CenterScreen
             };
@@ -192,17 +195,12 @@ namespace WPF.UserControls
 
         private void Followers(object sender, RoutedEventArgs e)
         {
-            People main = new People(_userBLL.GetFollowers(_userBLL.LoginRead()))
+            People main = new People(_personBLL.GetFollowers(_userBLL.LoginRead()))
             {
                 WindowStartupLocation = WindowStartupLocation.CenterScreen
             };
             main.ShowDialog();
         }
-
-        //private void Refresh_Click(object sender, RoutedEventArgs e)
-        //{
-        //    Refresh();
-        //}
 
         public void Refresh()
         {
