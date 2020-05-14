@@ -17,6 +17,7 @@ namespace WPF.UserControls
         PostBLL _postBLL;
         User _user;
         Post _current_post;
+        int _conn;
         List<Post> _posts;
         int _index_of_post = 0;
         bool _is_any_posts = false;
@@ -58,6 +59,7 @@ namespace WPF.UserControls
                 _personBLL.Unfollow(_userBLL.LoginRead(), _friendLogin);
                 btnFollow.BorderBrush = Brushes.Transparent;
             }
+            Refresh();
         }
 
         private void Like(object sender, RoutedEventArgs e)
@@ -161,6 +163,15 @@ namespace WPF.UserControls
             main.ShowDialog();
         }
 
+        private void WhoCommon(object sender, RoutedEventArgs e)
+        {
+            People main = new People(_personBLL.GetWhoCommon(_userBLL.LoginRead(), _friendLogin))
+            {
+                WindowStartupLocation = WindowStartupLocation.CenterScreen
+            };
+            main.ShowDialog();
+        }
+
         private void Following(object sender, RoutedEventArgs e)
         {
             People main = new People(_personBLL.GetFollowing(_friendLogin))
@@ -219,6 +230,33 @@ namespace WPF.UserControls
                 btnComment.IsEnabled = false;
                 btnComments.IsEnabled = false;
                 btnLikers.IsEnabled = false;
+            }
+
+            _conn = _personBLL.Connections(_userBLL.LoginRead(), _friendLogin);
+            if (_conn == 0)
+            {
+                btnConnections.IsEnabled = false;
+                lblConn.Content = "No connection";
+            }
+            else if (_conn == 1)
+            {
+                btnConnections.IsEnabled = false;
+                lblConn.Content = "1st connection";
+            }
+            else if (_conn == 2)
+            {
+                btnConnections.IsEnabled = true;
+                lblConn.Content = "2nd connection";
+            }
+            else if (_conn == 3)
+            {
+                btnConnections.IsEnabled = false;
+                lblConn.Content = "3rd connection";
+            }
+            else
+            {
+                btnConnections.IsEnabled = false;
+                lblConn.Content = _conn + "th connection";
             }
         }
     }

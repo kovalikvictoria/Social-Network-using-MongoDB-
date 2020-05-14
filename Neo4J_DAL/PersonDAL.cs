@@ -1,6 +1,8 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using Entity;
 using Neo4jClient;
+using Neo4jClient.Cypher;
 
 namespace Neo4J
 {
@@ -77,6 +79,33 @@ namespace Neo4J
                 .WithParam("pname", p.Login)
                 .Delete("p")
                 .ExecuteWithoutResults();
+        }
+
+        // match path = shortestPath((p1: Person {name: 'yana'})-[*]-(p2:Person {name: 'yulia'})) return length(path)
+        public int GetShortestPath(string user, string friend)
+        {
+            try
+            {
+                return client.Cypher
+                .Match("path = shortestPath((p1:Person {name: {pn1}})-[*]-(p2:Person {name: {pn2}}))")
+                .WithParam("pn1", user)
+                .WithParam("pn2", friend)
+                .Return<int>("length(path)")
+                .Results.ToArray().Single();
+            }
+            catch
+            {
+                return 0;
+            }
+        }
+
+        public IEnumerable<User> GetWhoCommon(string user, string friend)
+        {
+            return client.Cypher
+                .Match("(p1:Person {name: {pn1}})-[:FOLLOWING]-(p)-[:FOLLOWING]-(p2:Person {name: {pn2}})")
+                .WithParam("pn1", user)
+                .WithParam("pn2", friend)
+                .Return<User>("p").Results;     
         }
     }
 }

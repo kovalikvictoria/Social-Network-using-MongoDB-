@@ -35,3 +35,40 @@ D:\Education\Programs\Visual Studio 2019\Projects\SocialNetwork\BLL\bin\Debug\En
 D:\Education\Programs\Visual Studio 2019\Projects\SocialNetwork\BLL\bin\Debug\Neo4j.Driver.xml
 D:\Education\Programs\Visual Studio 2019\Projects\SocialNetwork\BLL\bin\Debug\Neo4jClient.pdb
 D:\Education\Programs\Visual Studio 2019\Projects\SocialNetwork\BLL\bin\Debug\Neo4jClient.xml
+D:\Education\6th term\Intro in NoSQL\SocialNetwork\BLL\bin\Debug\mongocrypt.dll
+D:\Education\6th term\Intro in NoSQL\SocialNetwork\BLL\bin\Debug\BLL.dll.config
+D:\Education\6th term\Intro in NoSQL\SocialNetwork\BLL\bin\Debug\BLL.dll
+D:\Education\6th term\Intro in NoSQL\SocialNetwork\BLL\bin\Debug\BLL.pdb
+D:\Education\6th term\Intro in NoSQL\SocialNetwork\BLL\bin\Debug\Crc32C.NET.dll
+D:\Education\6th term\Intro in NoSQL\SocialNetwork\BLL\bin\Debug\DAL.dll
+D:\Education\6th term\Intro in NoSQL\SocialNetwork\BLL\bin\Debug\DnsClient.dll
+D:\Education\6th term\Intro in NoSQL\SocialNetwork\BLL\bin\Debug\Entity.dll
+D:\Education\6th term\Intro in NoSQL\SocialNetwork\BLL\bin\Debug\MongoDB.Bson.dll
+D:\Education\6th term\Intro in NoSQL\SocialNetwork\BLL\bin\Debug\MongoDB.Driver.Core.dll
+D:\Education\6th term\Intro in NoSQL\SocialNetwork\BLL\bin\Debug\MongoDB.Driver.dll
+D:\Education\6th term\Intro in NoSQL\SocialNetwork\BLL\bin\Debug\MongoDB.Libmongocrypt.dll
+D:\Education\6th term\Intro in NoSQL\SocialNetwork\BLL\bin\Debug\Neo4j.Driver.dll
+D:\Education\6th term\Intro in NoSQL\SocialNetwork\BLL\bin\Debug\Neo4jClient.dll
+D:\Education\6th term\Intro in NoSQL\SocialNetwork\BLL\bin\Debug\Newtonsoft.Json.dll
+D:\Education\6th term\Intro in NoSQL\SocialNetwork\BLL\bin\Debug\SharpCompress.dll
+D:\Education\6th term\Intro in NoSQL\SocialNetwork\BLL\bin\Debug\Snappy.NET.dll
+D:\Education\6th term\Intro in NoSQL\SocialNetwork\BLL\bin\Debug\System.Buffers.dll
+D:\Education\6th term\Intro in NoSQL\SocialNetwork\BLL\bin\Debug\DAL.pdb
+D:\Education\6th term\Intro in NoSQL\SocialNetwork\BLL\bin\Debug\DAL.dll.config
+D:\Education\6th term\Intro in NoSQL\SocialNetwork\BLL\bin\Debug\Entity.pdb
+D:\Education\6th term\Intro in NoSQL\SocialNetwork\BLL\bin\Debug\Entity.dll.config
+D:\Education\6th term\Intro in NoSQL\SocialNetwork\BLL\bin\Debug\Crc32C.NET.xml
+D:\Education\6th term\Intro in NoSQL\SocialNetwork\BLL\bin\Debug\DnsClient.xml
+D:\Education\6th term\Intro in NoSQL\SocialNetwork\BLL\bin\Debug\MongoDB.Bson.xml
+D:\Education\6th term\Intro in NoSQL\SocialNetwork\BLL\bin\Debug\MongoDB.Driver.xml
+D:\Education\6th term\Intro in NoSQL\SocialNetwork\BLL\bin\Debug\MongoDB.Driver.Core.xml
+D:\Education\6th term\Intro in NoSQL\SocialNetwork\BLL\bin\Debug\Neo4j.Driver.xml
+D:\Education\6th term\Intro in NoSQL\SocialNetwork\BLL\bin\Debug\Neo4jClient.pdb
+D:\Education\6th term\Intro in NoSQL\SocialNetwork\BLL\bin\Debug\Neo4jClient.xml
+D:\Education\6th term\Intro in NoSQL\SocialNetwork\BLL\bin\Debug\Newtonsoft.Json.xml
+D:\Education\6th term\Intro in NoSQL\SocialNetwork\BLL\bin\Debug\Snappy.NET.xml
+D:\Education\6th term\Intro in NoSQL\SocialNetwork\BLL\bin\Debug\System.Buffers.xml
+D:\Education\6th term\Intro in NoSQL\SocialNetwork\BLL\obj\Debug\BLL.csprojAssemblyReference.cache
+D:\Education\6th term\Intro in NoSQL\SocialNetwork\BLL\obj\Debug\BLL.csproj.CopyComplete
+D:\Education\6th term\Intro in NoSQL\SocialNetwork\BLL\obj\Debug\BLL.dll
+D:\Education\6th term\Intro in NoSQL\SocialNetwork\BLL\obj\Debug\BLL.pdb

@@ -38,6 +38,29 @@ namespace Neo4J
             return false;
         }
 
+        public int Connections(string user, string friend)
+        {
+            return _DAL.GetShortestPath(user, friend);
+        }
+
+        public List<string> GetWhoCommon(string user, string friend)
+        {
+            List<string> common = new List<string>();
+            try
+            {
+                var people = _DAL.GetWhoCommon(user, friend);
+                foreach (var p in people)
+                {
+                    common.Add(p.Login);
+                }
+                return common;
+            }
+            catch
+            {
+                return common;
+            }
+        }
+
         public bool UpdatePerson(string name, string new_name)
         {
             try

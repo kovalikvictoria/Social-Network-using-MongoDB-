@@ -28,5 +28,7 @@
         <Button Width="180" BorderThickness="0" Background="IndianRed" Foreground="WhiteSmoke" Height="30" HorizontalAlignment="Center" VerticalAlignment="Bottom"  Margin="31,0,589,312" Content="Following"  Click="Following"/>
         <Button Width="180" BorderThickness="0" Background="IndianRed" Foreground="WhiteSmoke" Height="30" HorizontalAlignment="Center" VerticalAlignment="Bottom"  Margin="31,0,589,347" Content="Followers"  Click="Followers"/>
         <Button x:Name="btnFollow" Width="180" BorderThickness="3" Background="IndianRed" Foreground="WhiteSmoke" Height="30" HorizontalAlignment="Center" VerticalAlignment="Bottom"  Margin="31,0,589,236" Content="Follow"  Click="Follow_Click"/>
+        <Label Name="lblConn" Content="Connection" Margin="31,369,589,204" FontStyle="Oblique" HorizontalAlignment="Center" VerticalAlignment="Bottom" />
+        <Button Width="180" x:Name="btnConnections" Height="26" Background="Transparent" BorderThickness="0" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="31,0,589,183" Content="Common friends" FontStyle="Oblique" Click="WhoCommon"/>
     </Grid>
 </UserControl>

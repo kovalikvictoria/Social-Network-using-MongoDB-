@@ -1,7 +1,159 @@
-{"_id":{"$oid":"5e92195b615fb064b8dd9344"},"OwnerId":{"$oid":"5e90870476ca29f28f47b9c7"},"Text":"How are you, friends?","DateTime":"11.04.2020 22:24:11","Likes":{"$numberInt":"2"},"WhoLiked":["vika20","ivasyk"],"Comments":[{"OwnerId":{"$oid":"5e9087f076ca29f28f47b9f0"},"Text":"Oh, I'm good!\r\nThank you!\r\nAnd you?","DateTime":"12.04.2020 19:56:18"},{"OwnerId":{"$oid":"5e90870476ca29f28f47b9c7"},"Text":"I'm too!\r\nSee you tommorrow :)","DateTime":"12.04.2020 20:37:06"}]}
-{"_id":{"$oid":"5e922093615fb00ce8cec7bb"},"OwnerId":{"$oid":"5e90870476ca29f28f47b9c7"},"Text":"You're welcome on my page!","DateTime":"11.04.2020 22:54:59","Likes":{"$numberInt":"0"},"WhoLiked":[]}
-{"_id":{"$oid":"5e92e3ec615fb03d30a3010f"},"OwnerId":{"$oid":"5e9087f076ca29f28f47b9f0"},"Text":"Ready for fun!\r\nWho with me?","DateTime":"12.04.2020 12:48:28","Likes":{"$numberInt":"2"},"WhoLiked":["yanochka","vika20"],"Comments":[{"OwnerId":{"$oid":"5e90870476ca29f28f47b9c7"},"Text":"I'll be first!","DateTime":"12.04.2020 19:04:56"}]}
-{"_id":{"$oid":"5e92e661615fb04ac41a3fb3"},"OwnerId":{"$oid":"5e9087f076ca29f28f47b9f0"},"Text":"Guys, can you help me?","DateTime":"12.04.2020 12:58:57","Likes":{"$numberInt":"2"},"WhoLiked":["yanochka","vika20"]}
-{"_id":{"$oid":"5e933d3c615fb0667c45a92d"},"OwnerId":{"$oid":"5e9087f076ca29f28f47b9f0"},"Text":"I have special news for you!\r\nDo you want to know?","DateTime":"12.04.2020 19:09:32","Likes":{"$numberInt":"1"},"WhoLiked":["vika20"],"Comments":[{"OwnerId":{"$oid":"5e90870476ca29f28f47b9c7"},"Text":"Of course, dear!","DateTime":"12.04.2020 19:10:21"}]}
-{"_id":{"$oid":"5e934633615fb0051495aca6"},"OwnerId":{"$oid":"5e90870476ca29f28f47b9c7"},"Text":"I'll watch Red Joan today.","DateTime":"12.04.2020 19:47:47","Likes":{"$numberInt":"3"},"WhoLiked":["yanochka","ivasyk","yuuu2000"],"Comments":[{"OwnerId":{"$oid":"5e908b3376ca29f28f47bb44"},"Text":"I'm too :)","DateTime":"12.04.2020 20:43:42"}]}
-{"_id":{"$oid":"5e93570e615fb061e47ffed3"},"OwnerId":{"$oid":"5e90870476ca29f28f47b9c7"},"Text":"I'm very tired to work with this app...\r\nAnd I want to go to bed now. \r\nGood night!","DateTime":"12.04.2020 20:59:42","Likes":{"$numberInt":"1"},"WhoLiked":["yuuu2000"]}
+[{
+  "_id": {
+    "$oid": "5e922093615fb00ce8cec7bb"
+  },
+  "OwnerId": {
+    "$oid": "5e90870476ca29f28f47b9c7"
+  },
+  "Text": "You're welcome on my page!",
+  "DateTime": "11.04.2020 22:54:59",
+  "Likes": 1,
+  "WhoLiked": [
+    "ostap"
+  ],
+  "Comments": [
+    {
+      "OwnerId": {
+        "$oid": "5ebc362e615fb04bb00853c1"
+      },
+      "Text": "You're very interesting person!",
+      "DateTime": "13.05.2020 21:18:37"
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "5e92e3ec615fb03d30a3010f"
+  },
+  "OwnerId": {
+    "$oid": "5e9087f076ca29f28f47b9f0"
+  },
+  "Text": "Ready for fun!\r\nWho with me?",
+  "DateTime": "12.04.2020 12:48:28",
+  "Likes": 2,
+  "WhoLiked": [
+    "yana",
+    "vika"
+  ],
+  "Comments": [
+    {
+      "OwnerId": {
+        "$oid": "5e90870476ca29f28f47b9c7"
+      },
+      "Text": "I'll be first!",
+      "DateTime": "12.04.2020 19:04:56"
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "5e92e661615fb04ac41a3fb3"
+  },
+  "OwnerId": {
+    "$oid": "5e9087f076ca29f28f47b9f0"
+  },
+  "Text": "Guys, can you help me?",
+  "DateTime": "12.04.2020 12:58:57",
+  "Likes": 1,
+  "WhoLiked": [
+    "yana"
+  ]
+},{
+  "_id": {
+    "$oid": "5e933d3c615fb0667c45a92d"
+  },
+  "OwnerId": {
+    "$oid": "5e9087f076ca29f28f47b9f0"
+  },
+  "Text": "I have special news for you!\r\nDo you want to know?",
+  "DateTime": "12.04.2020 19:09:32",
+  "Likes": 1,
+  "WhoLiked": [
+    "vika"
+  ],
+  "Comments": [
+    {
+      "OwnerId": {
+        "$oid": "5e90870476ca29f28f47b9c7"
+      },
+      "Text": "Of course, dear!",
+      "DateTime": "12.04.2020 19:10:21"
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "5e934633615fb0051495aca6"
+  },
+  "OwnerId": {
+    "$oid": "5e90870476ca29f28f47b9c7"
+  },
+  "Text": "I'll watch \"Red Joan\" today.",
+  "DateTime": "12.04.2020 19:47:47",
+  "Likes": 4,
+  "WhoLiked": [
+    "yana",
+    "ivasyk",
+    "yulia",
+    "ostap"
+  ],
+  "Comments": [
+    {
+      "OwnerId": {
+        "$oid": "5e908b3376ca29f28f47bb44"
+      },
+      "Text": "I'm too :)",
+      "DateTime": "12.04.2020 20:43:42"
+    },
+    {
+      "OwnerId": {
+        "$oid": "5e90870476ca29f28f47b9c7"
+      },
+      "Text": "Have a good evening, Yulia!",
+      "DateTime": "13.04.2020 10:58:42"
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "5e93570e615fb061e47ffed3"
+  },
+  "OwnerId": {
+    "$oid": "5e90870476ca29f28f47b9c7"
+  },
+  "Text": "I'm very tired to work with this app...\r\nAnd I want to go to bed now. \r\nGood night!",
+  "DateTime": "12.04.2020 20:59:42",
+  "Likes": 2,
+  "WhoLiked": [
+    "yulia",
+    "ostap"
+  ],
+  "Comments": [
+    {
+      "OwnerId": {
+        "$oid": "5ebc362e615fb04bb00853c1"
+      },
+      "Text": "I really understand you!",
+      "DateTime": "13.05.2020 21:17:00"
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "5ebc414f615fb04a74cb1dfd"
+  },
+  "OwnerId": {
+    "$oid": "5ebc362e615fb04bb00853c1"
+  },
+  "Text": "Have a nice evening :)",
+  "DateTime": "13.05.2020 21:49:51",
+  "Likes": 2,
+  "WhoLiked": [
+    "ostap",
+    "vika"
+  ],
+  "Comments": [
+    {
+      "OwnerId": {
+        "$oid": "5e90870476ca29f28f47b9c7"
+      },
+      "Text": "Thanks!",
+      "DateTime": "13.05.2020 21:51:44"
+    }
+  ]
+}]

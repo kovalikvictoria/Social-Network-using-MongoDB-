@@ -37,3 +37,42 @@ D:\Education\Programs\Visual Studio 2019\Projects\SocialNetwork\Neo4J_Test\bin\D
 D:\Education\Programs\Visual Studio 2019\Projects\SocialNetwork\Neo4J_Test\bin\Debug\Snappy.NET.xml
 D:\Education\Programs\Visual Studio 2019\Projects\SocialNetwork\Neo4J_Test\bin\Debug\System.Buffers.xml
 D:\Education\Programs\Visual Studio 2019\Projects\SocialNetwork\Neo4J_Test\bin\Debug\Crc32C.NET.xml
+D:\Education\6th term\Intro in NoSQL\SocialNetwork\Neo4J_Test\bin\Debug\mongocrypt.dll
+D:\Education\6th term\Intro in NoSQL\SocialNetwork\Neo4J_Test\bin\Debug\Neo4J_Test.exe.config
+D:\Education\6th term\Intro in NoSQL\SocialNetwork\Neo4J_Test\bin\Debug\Neo4J_Test.exe
+D:\Education\6th term\Intro in NoSQL\SocialNetwork\Neo4J_Test\bin\Debug\Neo4J_Test.pdb
+D:\Education\6th term\Intro in NoSQL\SocialNetwork\Neo4J_Test\bin\Debug\Entity.dll
+D:\Education\6th term\Intro in NoSQL\SocialNetwork\Neo4J_Test\bin\Debug\Neo4j.Driver.dll
+D:\Education\6th term\Intro in NoSQL\SocialNetwork\Neo4J_Test\bin\Debug\Neo4jClient.dll
+D:\Education\6th term\Intro in NoSQL\SocialNetwork\Neo4J_Test\bin\Debug\Neo4J_DAL.dll
+D:\Education\6th term\Intro in NoSQL\SocialNetwork\Neo4J_Test\bin\Debug\Newtonsoft.Json.dll
+D:\Education\6th term\Intro in NoSQL\SocialNetwork\Neo4J_Test\bin\Debug\MongoDB.Bson.dll
+D:\Education\6th term\Intro in NoSQL\SocialNetwork\Neo4J_Test\bin\Debug\DAL.dll
+D:\Education\6th term\Intro in NoSQL\SocialNetwork\Neo4J_Test\bin\Debug\MongoDB.Driver.dll
+D:\Education\6th term\Intro in NoSQL\SocialNetwork\Neo4J_Test\bin\Debug\MongoDB.Driver.Core.dll
+D:\Education\6th term\Intro in NoSQL\SocialNetwork\Neo4J_Test\bin\Debug\MongoDB.Libmongocrypt.dll
+D:\Education\6th term\Intro in NoSQL\SocialNetwork\Neo4J_Test\bin\Debug\DnsClient.dll
+D:\Education\6th term\Intro in NoSQL\SocialNetwork\Neo4J_Test\bin\Debug\SharpCompress.dll
+D:\Education\6th term\Intro in NoSQL\SocialNetwork\Neo4J_Test\bin\Debug\Snappy.NET.dll
+D:\Education\6th term\Intro in NoSQL\SocialNetwork\Neo4J_Test\bin\Debug\System.Buffers.dll
+D:\Education\6th term\Intro in NoSQL\SocialNetwork\Neo4J_Test\bin\Debug\Crc32C.NET.dll
+D:\Education\6th term\Intro in NoSQL\SocialNetwork\Neo4J_Test\bin\Debug\Entity.pdb
+D:\Education\6th term\Intro in NoSQL\SocialNetwork\Neo4J_Test\bin\Debug\Entity.dll.config
+D:\Education\6th term\Intro in NoSQL\SocialNetwork\Neo4J_Test\bin\Debug\Neo4J_DAL.pdb
+D:\Education\6th term\Intro in NoSQL\SocialNetwork\Neo4J_Test\bin\Debug\Neo4j.Driver.xml
+D:\Education\6th term\Intro in NoSQL\SocialNetwork\Neo4J_Test\bin\Debug\Neo4jClient.pdb
+D:\Education\6th term\Intro in NoSQL\SocialNetwork\Neo4J_Test\bin\Debug\Neo4jClient.xml
+D:\Education\6th term\Intro in NoSQL\SocialNetwork\Neo4J_Test\bin\Debug\Newtonsoft.Json.xml
+D:\Education\6th term\Intro in NoSQL\SocialNetwork\Neo4J_Test\bin\Debug\MongoDB.Bson.xml
+D:\Education\6th term\Intro in NoSQL\SocialNetwork\Neo4J_Test\bin\Debug\DAL.pdb
+D:\Education\6th term\Intro in NoSQL\SocialNetwork\Neo4J_Test\bin\Debug\DAL.dll.config
+D:\Education\6th term\Intro in NoSQL\SocialNetwork\Neo4J_Test\bin\Debug\MongoDB.Driver.xml
+D:\Education\6th term\Intro in NoSQL\SocialNetwork\Neo4J_Test\bin\Debug\MongoDB.Driver.Core.xml
+D:\Education\6th term\Intro in NoSQL\SocialNetwork\Neo4J_Test\bin\Debug\DnsClient.xml
+D:\Education\6th term\Intro in NoSQL\SocialNetwork\Neo4J_Test\bin\Debug\Snappy.NET.xml
+D:\Education\6th term\Intro in NoSQL\SocialNetwork\Neo4J_Test\bin\Debug\System.Buffers.xml
+D:\Education\6th term\Intro in NoSQL\SocialNetwork\Neo4J_Test\bin\Debug\Crc32C.NET.xml
+D:\Education\6th term\Intro in NoSQL\SocialNetwork\Neo4J_Test\obj\Debug\Neo4J_Test.csprojAssemblyReference.cache
+D:\Education\6th term\Intro in NoSQL\SocialNetwork\Neo4J_Test\obj\Debug\Neo4J_Test.csproj.CopyComplete
+D:\Education\6th term\Intro in NoSQL\SocialNetwork\Neo4J_Test\obj\Debug\Neo4J_Test.exe
+D:\Education\6th term\Intro in NoSQL\SocialNetwork\Neo4J_Test\obj\Debug\Neo4J_Test.pdb
