@@ -1,0 +1,68 @@
+﻿[
+  {
+    "n": {
+      "identity": 20,
+      "labels": [
+        "Person"
+      ],
+      "properties": {
+        "name": "yulia"
+      }
+    }
+  },
+  {
+    "n": {
+      "identity": 21,
+      "labels": [
+        "Person"
+      ],
+      "properties": {
+        "name": "yana"
+      }
+    }
+  },
+  {
+    "n": {
+      "identity": 22,
+      "labels": [
+        "Person"
+      ],
+      "properties": {
+        "name": "vika"
+      }
+    }
+  },
+  {
+    "n": {
+      "identity": 23,
+      "labels": [
+        "Person"
+      ],
+      "properties": {
+        "name": "ivasyk"
+      }
+    }
+  },
+  {
+    "n": {
+      "identity": 27,
+      "labels": [
+        "Person"
+      ],
+      "properties": {
+        "name": "ostap"
+      }
+    }
+  },
+  {
+    "n": {
+      "identity": 28,
+      "labels": [
+        "Person"
+      ],
+      "properties": {
+        "name": "marta"
+      }
+    }
+  }
+]
